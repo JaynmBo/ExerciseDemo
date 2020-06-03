@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.caobo.exercise_2.view.InterceptScrollLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:focusable="false"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <com.caobo.exercise_2.view.CustomHScrollView
+        android:id="@+id/h_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/list_item"
+                android:text="场数"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="先发" />
+
+            <TextView
+                style="@style/list_item"
+                android:text="时间"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="得分"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="篮板"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="助攻"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="抢断"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="盖帽"/>
+
+            <TextView
+                style="@style/list_item"
+                android:text="命中"/>
+
+        </LinearLayout>
+    </com.caobo.exercise_2.view.CustomHScrollView>
+</com.caobo.exercise_2.view.InterceptScrollLinearLayout>

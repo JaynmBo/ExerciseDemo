@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="6dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/nba" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="科比·布莱恩特"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="6dp"
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+    <com.caobo.exercise_2.view.InterceptScrollLinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/scroollContainter"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/head"
+        android:layout_alignParentRight="true"
+        android:focusable="false">
+
+        <com.caobo.exercise_2.view.CustomHScrollView
+            android:id="@+id/h_scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:focusable="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/textView_1"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_2"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_3"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_4"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_5"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_6"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_7"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_8"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_9"
+                    layout="@layout/list_textitem" />
+
+                <include
+                    android:id="@+id/textView_10"
+                    layout="@layout/list_textitem" />
+            </LinearLayout>
+        </com.caobo.exercise_2.view.CustomHScrollView>
+    </com.caobo.exercise_2.view.InterceptScrollLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+</LinearLayout>
