@@ -59,16 +59,16 @@ public class Exercise2Activity extends AppCompatActivity {
         Random random = new Random(1);
         for (int i = 1; i <= 30; i++) {
             data = new TestData();
-            data.setText1(String.valueOf(random.nextInt(10)));
-            data.setText2(String.valueOf(random.nextInt(10)));
-            data.setText3(String.valueOf(random.nextInt(10)));
-            data.setText4(String.valueOf(random.nextInt(10)));
-            data.setText5(String.valueOf(random.nextInt(10)));
-            data.setText6(String.valueOf(random.nextInt(10)));
-            data.setText7(String.valueOf(random.nextInt(10)));
-            data.setText8(String.valueOf(random.nextInt(10)));
-            data.setText9(String.valueOf(random.nextInt(10)));
-            data.setText10(String.valueOf(random.nextInt(10)));
+            data.setText1(String.valueOf(1));
+            data.setText2(String.valueOf(2));
+            data.setText3(String.valueOf(3));
+            data.setText4(String.valueOf(4));
+            data.setText5(String.valueOf(5));
+            data.setText6(String.valueOf(6));
+            data.setText7(String.valueOf(7));
+            data.setText8(String.valueOf(8));
+            data.setText9(String.valueOf(9));
+            data.setText10(String.valueOf(10));
             mDataList.add(data);
         }
         setData();

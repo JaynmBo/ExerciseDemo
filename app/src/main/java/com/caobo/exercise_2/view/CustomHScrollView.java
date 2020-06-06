@@ -44,11 +44,11 @@ public class CustomHScrollView extends HorizontalScrollView {
         return super.dispatchTouchEvent(ev);
     }
 
-    @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
-//        Log.e("caobocaobo","CustomHScrollView onInterceptTouchEvent");
-        return true;
-    }
+//    @Override
+//    public boolean onInterceptTouchEvent(MotionEvent ev) {
+////        Log.e("caobocaobo","CustomHScrollView onInterceptTouchEvent");
+//        return true;
+//    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
